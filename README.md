@@ -3,7 +3,36 @@
 A learner's dictionary: definitions, examples, UK and US pronunciation, CEFR levels, word lists
 and an A-Z index. Front end only; all content comes from free public APIs.
 
-Live: https://wordhoard-blue.vercel.app
+## Live demo
+
+**https://wordhoard-blue.vercel.app**
+
+## Features
+
+- **Search** with suggestions as you type, keyboard navigation, and `/` to focus the search box
+  from any page. A misspelt word shows close spellings to try instead.
+- **Entry pages** with senses grouped by part of speech, example sentences, synonyms,
+  collocations, verb forms, word origin, and UK and US pronunciation (IPA plus audio).
+- **CEFR levels** (A1 to C2) on 8,845 headwords, with a "core vocabulary" marker up to B2.
+- **Word lists** by level, with "Mark learned" and a progress ring.
+- **Browse A-Z** index of every headword on the lists.
+- **Word of the day**, recent searches and saved words.
+- **Light and dark themes**, remembered between visits.
+- Saved, recent and learned words stay in your browser (`localStorage`); there is no account
+  and no backend.
+
+## Tech stack
+
+| Concern | Choice |
+|---|---|
+| Build | Vite 8, TypeScript 6 |
+| UI | React 19 |
+| Routing | React Router 7 |
+| Data fetching and caching | TanStack Query 5, cached in `localStorage` for a week |
+| Styling | Plain CSS |
+| Lint | oxlint |
+| Tests | Vitest + React Testing Library |
+| Hosting | Vercel |
 
 ## Run it
 
